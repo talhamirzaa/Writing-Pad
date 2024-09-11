@@ -1,0 +1,15 @@
+#rdo_img
+{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.mybtn{
+    font-size: 24px;
+
+}
+
+.butn-text{
+    font-size: 15px;
+    font-weight: bold;
+}
