@@ -126,7 +126,7 @@ export default function Page() {
             {/* Item 1 */}
             <div className="flex-fill d-flex justify-content-between align-items-center shadow" style={{ height: '15%' }}>
                 <div className=''>
-                  <img className="w-75" src="./site_logo.png" alt="" />
+                  <img className="w-75" src="/site_logo.png" alt="" />
                 </div>
                 <div className="d-flex flex-row">
                 <button className="btn btn-outline-light border-0 d-flex flex-column p-0" onClick={handleUndo}><img className="w-50 align-self-center" src="https://img.icons8.com/?size=100&id=j0VQjpNrzL7e&format=png&color=737373" alt="undo icon" /><h6 className="align-self-center" style={{color:'#737373'}}>undo</h6></button>
