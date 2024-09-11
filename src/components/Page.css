@@ -1,3 +1,15 @@
+/* Hide the arrows in input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  appearance: textfield;
+}
+
+
+
 #rdo_img
 {
     -webkit-transform: scaleX(-1);
@@ -6,10 +18,10 @@
 
 .mybtn{
     font-size: 24px;
-
+    
 }
 
 .butn-text{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
 }

@@ -131,8 +131,8 @@ export default function Page() {
                 <div></div>
                 <div></div>
                 <div className="d-flex flex-row mx-5">
-                <button className="btn btn-outline-light border-0 d-flex flex-column p-0" onClick={handleUndo}><img className="w-50 align-self-center" src="https://img.icons8.com/?size=100&id=j0VQjpNrzL7e&format=png&color=737373" alt="undo icon" /><h6 className="align-self-center" style={{color:'#737373'}}>undo</h6></button>
-                <button className="btn btn-outline-light border-0 mx-1 d-flex flex-column p-0" onClick={handleRedo}><img id="rdo_img" className="w-50 align-self-center" src="https://img.icons8.com/?size=100&id=j0VQjpNrzL7e&format=png&color=737373" alt="undo icon" /><h6 className="align-self-center" style={{color:'#737373'}}>redo</h6></button>
+                <button className="btn btn-outline-light border-0 d-flex flex-column p-0" onClick={handleUndo}><img className="w-25 align-self-center" src="https://img.icons8.com/?size=100&id=j0VQjpNrzL7e&format=png&color=737373" alt="undo icon" /><h6 className="align-self-center" style={{color:'#737373'}}>undo</h6></button>
+                <button className="btn btn-outline-light border-0 mx-1 d-flex flex-column p-0" onClick={handleRedo}><img id="rdo_img" className="w-25 align-self-center" src="https://img.icons8.com/?size=100&id=j0VQjpNrzL7e&format=png&color=737373" alt="undo icon" /><h6 className="align-self-center" style={{color:'#737373'}}>redo</h6></button>
                 </div>
                 <div></div>
                 <div></div>
@@ -193,28 +193,28 @@ export default function Page() {
 
             {/* Item 3 */}
             <div className="flex-fill d-flex justify-content-center align-items-center shadow-sm" style={{ height: '10%' }}>
-                <select className="form-select border-0 shadow-sm mx-2 rounded-pill" style={{width:'15%'}} onChange={handleFontChange} value={selectedTextbox?.fontFamily || ''}>
+                <select className="form-select border-0 shadow-sm mx-2 rounded-pill h-50 py-0" style={{width:'15%',fontSize:'12px'}} onChange={handleFontChange} value={selectedTextbox?.fontFamily || ''}>
                 {fonts.map(font => <option key={font} value={font}>{font}</option>)}
                 </select>
             
                 
-                <div className="input-group d-flex shadow-sm mx-2 rounded-pill" style={{width:'fit-content', color:'black'}}>
-                <button className="btn btn-outline-light p-0 fs-4 rounded-pill" onClick={() => handleSizeChange(-2)}><i className="bi bi-dash" style={{color:'black'}}></i></button>
-                <input type="number" value={fontSize} onChange={handleFontSizeInput} className="form-control px-2" style={{ width: '60px',border:'none', backgroundColor:'#f8f9fa'}} />
-                <button className="btn btn-outline-light p-0 fs-4 rounded-pill" onClick={() => handleSizeChange(2)}><i className="bi bi-plus" style={{color:'black'}}></i></button>
+                <div className="input-group d-flex shadow-sm mx-2 rounded-pill " style={{width:'fit-content', color:'black'}}>
+                <button className="btn btn-sm shadow-sm btn-light border-0 rounded-end rounded-pill py-0 px-1 fs-6" onClick={() => handleSizeChange(-2)}><i className="bi bi-dash-lg" style={{color:'black'}}></i></button>
+                <input type="number" value={fontSize} onChange={handleFontSizeInput} className="form-control px-1 h-25 fw-bold border-0" style={{ width: '27px',border:'none',fontSize:'11px'}} />
+                <button className="btn btn-sm shadow-sm btn-light border-0 rounded-start rounded-pill py-0 px-1 fs-6" onClick={() => handleSizeChange(2)}><i className="bi bi-plus-lg" style={{color:'black'}}></i></button>
                 </div>
 
                 <div className="mx-4">
-                <button className="btn p-0 fs-5" onClick={() => handleTextFormat('bold')}><i className="bi bi-type-bold"></i></button>
-                <button className="btn p-0 fs-5 mx-1" onClick={() => handleTextFormat('italic')}><i className="bi bi-type-italic"></i></button>
-                <button className="btn p-0 fs-5 mx-1" onClick={() => handleTextFormat('justify')}><i className="bi bi-justify"></i></button>
-                <button className="btn p-0 fs-5 mx-1" onClick={() => handleTextFormat('underline')}><i className="bi bi-type-underline"></i></button>
+                <button className="btn btn-sm p-0 fs-6 " onClick={() => handleTextFormat('bold')}><i className="bi bi-type-bold"></i></button>
+                <button className="btn btn-sm p-0 fs-6 mx-1" onClick={() => handleTextFormat('italic')}><i className="bi bi-type-italic"></i></button>
+                <button className="btn btn-sm p-0 fs-6 mx-1" onClick={() => handleTextFormat('justify')}><i className="bi bi-justify"></i></button>
+                <button className="btn btn-sm p-0 fs-6 mx-1" onClick={() => handleTextFormat('underline')}><i className="bi bi-type-underline"></i></button>
                 </div>
             </div>
       
       {/* Item 4 */}
       <div className="flex-fill align-self-center " style={{ height: '10%'}}>
-        <button type="button" className="mybtn btn btn-sm rounded-pill bi bi-fonts mt-3 py-0 px-3" onClick={handleAddTextbox} style={{ backgroundColor: '#E0E0E0', color:'black' }}>
+        <button type="button" className="mybtn btn btn-sm rounded-pill bi bi-fonts mt-3 py-0 px-2 fs-5" onClick={handleAddTextbox} style={{ backgroundColor: '#E0E0E0', color:'black' }}>
          <span className='butn-text'><sup>Add text</sup></span></button>
       </div>
     </div>
