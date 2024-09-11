@@ -126,12 +126,17 @@ export default function Page() {
             {/* Item 1 */}
             <div className="flex-fill d-flex justify-content-between align-items-center shadow" style={{ height: '15%' }}>
                 <div className=''>
-                  <img className="w-75" src="/site_logo.jpg" alt="logo" />
+                  <img className="w-50 mx-2" src="/site_logo.jpg" alt="logo" />
                 </div>
-                <div className="d-flex flex-row">
+                <div></div>
+                <div></div>
+                <div className="d-flex flex-row mx-5">
                 <button className="btn btn-outline-light border-0 d-flex flex-column p-0" onClick={handleUndo}><img className="w-50 align-self-center" src="https://img.icons8.com/?size=100&id=j0VQjpNrzL7e&format=png&color=737373" alt="undo icon" /><h6 className="align-self-center" style={{color:'#737373'}}>undo</h6></button>
                 <button className="btn btn-outline-light border-0 mx-1 d-flex flex-column p-0" onClick={handleRedo}><img id="rdo_img" className="w-50 align-self-center" src="https://img.icons8.com/?size=100&id=j0VQjpNrzL7e&format=png&color=737373" alt="undo icon" /><h6 className="align-self-center" style={{color:'#737373'}}>redo</h6></button>
                 </div>
+                <div></div>
+                <div></div>
+                <div></div>
                 <div></div>
                 
             </div>
@@ -194,9 +199,9 @@ export default function Page() {
             
                 
                 <div className="input-group d-flex shadow-sm mx-2 rounded-pill" style={{width:'fit-content', color:'black'}}>
-                <button className="btn btn-outline-light p-0 fs-4 shadow-1sm rounded-pill" onClick={() => handleSizeChange(-2)}><i className="bi bi-dash" style={{color:'black'}}></i></button>
-                <input type="number" value={fontSize} onChange={handleFontSizeInput} className="form-control px-2" style={{ width: '60px',border:'none' }} />
-                <button className="btn btn-outline-light p-0 fs-4 shadow-1sm rounded-pill" onClick={() => handleSizeChange(2)}><i className="bi bi-plus" style={{color:'black'}}></i></button>
+                <button className="btn btn-outline-light p-0 fs-4 rounded-pill" onClick={() => handleSizeChange(-2)}><i className="bi bi-dash" style={{color:'black'}}></i></button>
+                <input type="number" value={fontSize} onChange={handleFontSizeInput} className="form-control px-2" style={{ width: '60px',border:'none', backgroundColor:'#f8f9fa'}} />
+                <button className="btn btn-outline-light p-0 fs-4 rounded-pill" onClick={() => handleSizeChange(2)}><i className="bi bi-plus" style={{color:'black'}}></i></button>
                 </div>
 
                 <div className="mx-4">
